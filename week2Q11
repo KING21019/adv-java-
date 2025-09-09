@@ -1,0 +1,15 @@
+class Parent {}
+class Child extends Parent {}
+
+public class InstanceofDemo {
+    public static void main(String[] args) {
+        Parent p = new Child();
+
+        if (p instanceof Child) {
+            System.out.println("p is instance of Child");
+        }
+        if (p instanceof Parent) {
+            System.out.println("p is instance of Parent");
+        }
+    }
+}
