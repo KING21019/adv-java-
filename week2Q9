@@ -1,0 +1,15 @@
+class Calculator {
+    int multiply(int a, int b) {
+        return a * b;
+    }
+
+    double multiply(double a, double b) {
+        return a * b;
+    }
+
+    public static void main(String[] args) {
+        Calculator c = new Calculator();
+        System.out.println("Multiply int: " + c.multiply(5, 6));
+        System.out.println("Multiply double: " + c.multiply(3.5, 2.5));
+    }
+}
