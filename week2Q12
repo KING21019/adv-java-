@@ -1,0 +1,27 @@
+abstract class Appliance {
+    abstract void start();
+}
+
+class Fan extends Appliance {
+    void start() {
+        System.out.println("Fan started");
+    }
+}
+
+class WashingMachine extends Appliance {
+    void start() {
+        System.out.println("Washing Machine started");
+    }
+}
+
+class TestAppliance {
+    public static void main(String[] args) {
+        Appliance a;
+
+        a = new Fan();
+        a.start();
+
+        a = new WashingMachine();
+        a.start();
+    }
+}
